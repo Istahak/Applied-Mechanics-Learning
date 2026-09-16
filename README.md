@@ -148,19 +148,20 @@ logs/scraper.log                        full run log
 
 ## What is in this repository
 
-The **collection code and documentation** are committed here. The bulk scraped
-files are not: they are the site's content rather than ours, and `scraper.py`
-reproduces them from scratch in about 22 minutes.
+The collection code, the documentation and **the full dataset**.
 
-- `data/sample/ghush_reports_sample_200.csv` - 200 rows, to show the shape
+- `data/processed/ghush_reports_clean.csv` - all 19,016 cleaned rows
+- `data/processed/ghush_reports_clean.parquet` - same, columnar
+- `data/raw/reports_raw.jsonl` - untouched API responses, one record per line
 - `data/raw/summary.json` - the site's own published aggregate totals
+- `data/sample/ghush_reports_sample_200.csv` - 200 rows, for a quick look
 
-To include the full dataset in a commit anyway, delete the three data lines from
-`.gitignore`. The files total roughly 42 MB, which is within GitHub's limits.
+The data is the site's content, not ours, and is republished here for coursework
+under the caveats in DATA_DICTIONARY.md. It remains unverified, anonymous,
+user-submitted allegations. See the robots.txt note above.
 
 ### Provenance
 
 Collected 2026-09-16. The run captured all 19,016 records then published, and the
 totals matched the site's own `/api/reports/summary` exactly: 19,016 records,
-5,517,599,701 BDT, 6,680 records above 10,000 BDT. `logs/scraper.log` records the
-run locally but is not committed.
+5,517,599,701 BDT, 6,680 records above 10,000 BDT.
