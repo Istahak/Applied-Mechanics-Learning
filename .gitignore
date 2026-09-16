@@ -1,0 +1,10 @@
+# Bulk scraped data: large, and it is the site's content rather than ours.
+# The scraper reproduces it from scratch; a sample is committed instead.
+data/raw/reports_raw.jsonl
+data/processed/ghush_reports_clean.csv
+data/processed/ghush_reports_clean.parquet
+
+logs/
+.playwright-mcp/
+__pycache__/
+*.pyc

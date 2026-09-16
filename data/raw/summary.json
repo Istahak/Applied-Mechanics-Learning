@@ -1,0 +1,132 @@
+{
+  "totals": {
+    "count": 19016,
+    "amount": 5517599701,
+    "spanDays": 26,
+    "districts": 8,
+    "paidCount": 13382,
+    "refusalRate": 25,
+    "pendingCount": 1186,
+    "refusedCount": 4448,
+    "maximumAmount": 100000000,
+    "minimumAmount": 1,
+    "underFiveThousandRate": 52
+  },
+  "amountBands": {
+    "upTo1000": 3911,
+    "above10000": 6680,
+    "from1001To5000": 5977,
+    "from5001To10000": 2448
+  },
+  "districtRows": [
+    {
+      "name": "Dhaka",
+      "reports": 7444,
+      "amount": 2945765702
+    },
+    {
+      "name": "Chattogram",
+      "reports": 4046,
+      "amount": 1016585257
+    },
+    {
+      "name": "Rajshahi",
+      "reports": 1646,
+      "amount": 226228507
+    },
+    {
+      "name": "Khulna",
+      "reports": 1497,
+      "amount": 341260951
+    },
+    {
+      "name": "Rangpur",
+      "reports": 1335,
+      "amount": 257379136
+    },
+    {
+      "name": "Mymensingh",
+      "reports": 1201,
+      "amount": 115705185
+    },
+    {
+      "name": "Barishal",
+      "reports": 992,
+      "amount": 247924579
+    },
+    {
+      "name": "Sylhet",
+      "reports": 855,
+      "amount": 366750384
+    }
+  ],
+  "latestReport": {
+    "id": "391091e2-bbcb-4d2b-a6e2-36a0bb3c7a3f",
+    "city": "Dhaka",
+    "outcome": "paid",
+    "created_at": "2026-09-16T12:00:00.000Z",
+    "department": "Education Office"
+  },
+  "departmentRows": [
+    {
+      "name": "Other public service",
+      "reports": 6088,
+      "amount": 2535228371
+    },
+    {
+      "name": "Land Office",
+      "reports": 4102,
+      "amount": 918034359
+    },
+    {
+      "name": "Passport Office",
+      "reports": 2217,
+      "amount": 200040074
+    },
+    {
+      "name": "BRTA",
+      "reports": 1378,
+      "amount": 212695628
+    },
+    {
+      "name": "Education Office",
+      "reports": 1057,
+      "amount": 205546526
+    },
+    {
+      "name": "City Corporation",
+      "reports": 829,
+      "amount": 358736235
+    },
+    {
+      "name": "Public Hospital",
+      "reports": 759,
+      "amount": 284051851
+    },
+    {
+      "name": "Sub-Registry Office",
+      "reports": 702,
+      "amount": 179121383
+    },
+    {
+      "name": "Accounts Office",
+      "reports": 672,
+      "amount": 139865275
+    },
+    {
+      "name": "Traffic Police",
+      "reports": 492,
+      "amount": 7968515
+    },
+    {
+      "name": "Tax Office",
+      "reports": 427,
+      "amount": 338582489
+    },
+    {
+      "name": "Customs Office",
+      "reports": 293,
+      "amount": 137728995
+    }
+  ]
+}
