@@ -165,3 +165,13 @@ user-submitted allegations. See the robots.txt note above.
 Collected 2026-09-16. The run captured all 19,016 records then published, and the
 totals matched the site's own `/api/reports/summary` exactly: 19,016 records,
 5,517,599,701 BDT, 6,680 records above 10,000 BDT.
+
+## License
+
+**The MIT License covers the code in this repository only** - `scraper.py`,
+`clean.py` and the documentation.
+
+**It does not cover the data under `data/`.** Those records were submitted by
+members of the public to ghush.site and collected from it; they are not ours to
+license, and nothing here grants rights over them. Anyone wanting to reuse the
+dataset should look to the source site's own terms.
