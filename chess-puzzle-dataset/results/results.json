@@ -1,0 +1,121 @@
+{
+  "config": {
+    "epochs": 1,
+    "batch_size": 128,
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "warmup_frac": 0.05,
+    "grad_clip": 1.0,
+    "seed": 42,
+    "cnn": {
+      "channels": 32,
+      "blocks": 2
+    },
+    "ctm": {
+      "d_model": 64,
+      "d_input": 32,
+      "backbone_blocks": 1,
+      "memory": 16,
+      "nlm_hidden": 16,
+      "ticks": 6,
+      "out_pairs": 64,
+      "action_pairs": 32,
+      "heads": 4
+    },
+    "penalty": {
+      "lam": 0.2,
+      "tau": 0.8,
+      "temp": 0.05
+    }
+  },
+  "summary": [
+    {
+      "model": "CNN",
+      "params": 42752,
+      "train_min": 0.0,
+      "accuracy": 0.0675,
+      "top3": 0.195,
+      "ece": 0.02246036127209663,
+      "acc_by_band": [
+        0.06493506493506493,
+        0.058394160583941604,
+        0.06140350877192982,
+        0.09523809523809523,
+        0.1111111111111111
+      ]
+    },
+    {
+      "model": "CTM",
+      "params": 353792,
+      "train_min": 0.1,
+      "accuracy": 0.0375,
+      "top3": 0.155,
+      "ece": 0.026271388046443463,
+      "acc_by_band": [
+        0.0,
+        0.043795620437956206,
+        0.043859649122807015,
+        0.031746031746031744,
+        0.2222222222222222
+      ],
+      "mean_ticks": 6.0,
+      "ticks_by_band": [
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0
+      ],
+      "spearman_ticks_rating": 0.0,
+      "halt_accuracy": 0.0325
+    },
+    {
+      "model": "CTM + penalty",
+      "params": 353792,
+      "train_min": 0.1,
+      "accuracy": 0.0375,
+      "top3": 0.155,
+      "ece": 0.0262715033441782,
+      "acc_by_band": [
+        0.0,
+        0.043795620437956206,
+        0.043859649122807015,
+        0.031746031746031744,
+        0.2222222222222222
+      ],
+      "mean_ticks": 6.0,
+      "ticks_by_band": [
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0
+      ],
+      "spearman_ticks_rating": 0.0,
+      "halt_accuracy": 0.0325
+    }
+  ],
+  "history": {
+    "CNN": [
+      {
+        "epoch": 1,
+        "train_loss": 3.3561786860227585,
+        "val_acc": 0.0625
+      }
+    ],
+    "CTM": [
+      {
+        "epoch": 1,
+        "train_loss": 3.2540751695632935,
+        "val_acc": 0.06
+      }
+    ],
+    "CTM + penalty": [
+      {
+        "epoch": 1,
+        "train_loss": 3.4540750682353973,
+        "val_acc": 0.06
+      }
+    ]
+  }
+}
